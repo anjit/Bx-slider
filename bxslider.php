@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name:bx_slider
+* Plugin Name:Bx slider
 * Plugin URI: anjitvishwakarma28.wordpress.com
 * Description: this plugin use to make carrosal.
 * Version: The Plugin's Version Number, e.g.: 1.0
