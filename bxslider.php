@@ -78,11 +78,11 @@ function update_bxsliders() {
 }
 }
  
-if(isset($_POST["submit"])){ 
-    update_option('bpager', $_POST['bpager']);    
-    update_option('bcontrols', $_POST['bcontrols']);    
-    update_option('binfiniteLoop', $_POST['binfiniteLoop']);    
-    update_option('bautoStart', $_POST['bautoStart']);    
+if(isset($_REQUEST["submit"])){ 
+    update_option('bpager',sanitize_text_field($_REQUEST['bpager']));    
+    update_option('bcontrols',sanitize_text_field($_REQUEST['bcontrols']));    
+    update_option('binfiniteLoop',sanitize_text_field($_REQUEST['binfiniteLoop']));    
+    update_option('bautoStart',sanitize_text_field($_REQUEST['bautoStart']));    
     echo '<div id="message" class="updated fade"><p>Options Updates</p></div>';
 }
 
